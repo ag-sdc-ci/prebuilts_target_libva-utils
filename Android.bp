@@ -1,0 +1,34 @@
+// Auto-generated prebuilt APEX Blueprint for external/libva-utils
+// Staged from APEX package: libva-utils (org.blisslabs.ag.libva-utils)
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+prebuilt_apex {
+    name: "org.blisslabs.ag.libva-utils",
+    apex_name: "libva-utils",
+    source_apex_name: "libva-utils",
+    arch: {
+        arm64: {
+            src: "org.blisslabs.ag.libva.utils.apex",
+        },
+        x86_64: {
+            src: "org.blisslabs.ag.libva.utils.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.libva-utils.apex",
+    prefer: true,
+    installable: true,
+}
+
+cc_prebuilt_library_static {
+    name: "libva_utils_common",
+    arch: {
+        x86_64: {
+            srcs: ["lib64/libva_utils_common.a"],
+        },
+    },
+    export_include_dirs: ["include"],
+    prefer: true,
+}

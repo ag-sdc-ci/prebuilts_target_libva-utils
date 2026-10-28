@@ -1,0 +1,6 @@
+shadow prebuilt repo: libva-utils (target)
+  upstream: https://github.com/android-generic/external_libva-utils
+  api-level: 34 (branch 34-20261028)
+  blobs: org.blisslabs.ag.libva.utils.apex
+  payload: flattened root include/, lib64/ + modernized Android.bp
+  date: 2026-10-28
