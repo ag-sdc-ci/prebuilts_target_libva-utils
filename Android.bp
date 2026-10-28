@@ -29,6 +29,5 @@ cc_prebuilt_library_static {
             srcs: ["lib64/libva_utils_common.a"],
         },
     },
-    export_include_dirs: ["include"],
     prefer: true,
 }
